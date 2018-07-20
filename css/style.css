@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  background: url("https://tinyurl.com/yddesoe9");
+}
+
+ul {
+  list-style-type: none;
+}
+
+.board__header {
+  font-family: "Gaegu", cursive;
+  text-align: center;
+  color: #000;
+  font-size: 60px;
+}
+
+.board__button {
+  display: none;
+}
+
+.column-container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  background: rgba(45, 52, 54, 0.5);
+  max-width: 1200px;
+  margin-left: 20%;
+}
+
+.column-container .column {
+  margin: 30px;
+  background-color: #e6e6e6;
+  padding: 10px;
+  -webkit-border-radius: 15%;
+  -moz-border-radius: 15%;
+  -ms-border-radius: 15%;
+  border-radius: 15%;
+  width: 300px;
+  text-align: center;
+  margin-left: 15%;
+}
+
+.column-container .column-title {
+  font-family: "Gaegu", cursive;
+  font-size: 30px;
+}
+
+.card {
+  padding: 10px;
+  background-color: #cccccc;
+  border: 2px solid #000;
+  text-align: center;
+  margin-right: 40px;
+  margin-bottom: 5%;
+}
+
+.card .card-description {
+  color: #333;
+  font-family: "Gaegu", cursive;
+  font-size: 20px;
+}
+
+.btn-delete {
+  background-color: #ffb3b3;
+  border: 1px solid #333;
+}
+
+.btn-delete:hover {
+  background-color: #ff0000;
+  border: 1px solid #333;
+  transition: 0.4s;
+  color: #fff;
+}
+
+.add-card {
+  margin-left: 10px;
+  background-color: #bae1ff;
+  border: 1px solid #333;
+}
+
+.add-card:hover {
+  background-color: #75D6FF;
+  border: 1px solid #333;
+  transition: 0.4s;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
