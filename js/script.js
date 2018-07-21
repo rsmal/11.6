@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (event.target.classList.contains('add-card')) {
                 self.addCard(new Card(prompt("Enter the name of the card")));
             }
-        });
+        })
     }
     Column.prototype = {
         addCard: function (card) {
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
         removeColumn: function () {
             this.element.parentNode.removeChild(this.element);
         }
-    };
+    }
 
     function Card(description) {
         var self = this;
@@ -55,13 +55,13 @@ document.addEventListener('DOMContentLoaded', function () {
             if (event.target.classList.contains('btn-delete')) {
                 self.removeCard();
             }
-        });
-    };
+        })
+    }
     Card.prototype = {
         removeCard: function () {
             this.element.parentNode.removeChild(this.element);
         }
-    };
+    }
     var board = {
         name: 'Kanban Board',
         addColumn: function (column) {
@@ -69,20 +69,20 @@ document.addEventListener('DOMContentLoaded', function () {
             initSortable(column.id);
         },
         element: document.querySelector('#board .column-container')
-    };
+    }
 
     function initSortable(id) {
         var el = document.getElementById(id);
         var sortable = Sortable.create(el, {
             group: 'kanban',
             sort: true
-        });
-    };
+        })
+    }
     document.querySelector('#board .create-column').addEventListener('click', function () {
         var name = prompt('Enter a column name');
         var column = new Column(name);
         board.addColumn(column);
-    });
+    })
     var todoColumn = new Column('To do');
     var doingColumn = new Column('In progress');
     var doneColumn = new Column('Done');
@@ -98,4 +98,4 @@ document.addEventListener('DOMContentLoaded', function () {
     todoColumn.addCard(card1);
     doingColumn.addCard(card2);
     doneColumn.addCard(card3);
-});
+})
