@@ -11,15 +11,22 @@ ul {
   list-style-type: none;
 }
 
+.board {
+  text-align: center;
+}
+
 .board__header {
   font-family: "Gaegu", cursive;
-  text-align: center;
   color: #000;
   font-size: 60px;
 }
 
 .board__button {
-  display: none;
+  margin-bottom: 50px;
+  height: 50px;
+  width: 300px;
+  border: 1px solid #333;
+  font-size: 25px;
 }
 
 .column-container {
@@ -41,7 +48,6 @@ ul {
   border-radius: 15%;
   width: 300px;
   text-align: center;
-  margin-left: 15%;
 }
 
 .column-container .column-title {
