@@ -32,13 +32,15 @@ ul {
 .column-container {
   padding: 10px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   background: rgba(45, 52, 54, 0.5);
   max-width: 1200px;
-  margin-left: 20%;
+  margin: 0 auto;
 }
 
 .column-container .column {
+  width: 25%;
   margin: 30px;
   background-color: #e6e6e6;
   padding: 10px;
@@ -93,6 +95,12 @@ ul {
   border: 1px solid #333;
   transition: 0.4s;
   color: #fff;
+}
+
+@media (max-width: 767px) {
+  .board__header {
+    color: #fff;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
