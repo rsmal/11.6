@@ -1,106 +1,31 @@
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-body {
-  margin: 0 auto;
-  background: url("https://tinyurl.com/yddesoe9");
-}
+body { margin: 0 auto; background: url("https://tinyurl.com/yddesoe9"); }
 
-ul {
-  list-style-type: none;
-}
+ul { list-style-type: none; }
 
-.board {
-  text-align: center;
-}
+.board { text-align: center; }
 
-.board__header {
-  font-family: "Gaegu", cursive;
-  color: #000;
-  font-size: 60px;
-}
+.board__header { font-family: "Gaegu", cursive; color: #000; font-size: 60px; }
 
-.board__button {
-  margin-bottom: 50px;
-  height: 50px;
-  width: 300px;
-  border: 1px solid #333;
-  font-size: 25px;
-}
+.board__button { margin-bottom: 50px; height: 50px; width: 300px; border: 1px solid #333; font-size: 25px; }
 
-.column-container {
-  padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background: rgba(45, 52, 54, 0.5);
-  max-width: 1200px;
-  margin: 0 auto;
-}
+.column-container { padding: 10px; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: center; justify-content: center; background: rgba(45, 52, 54, 0.5); max-width: 1200px; margin: 0 auto; }
 
-.column-container .column {
-  width: 25%;
-  margin: 30px;
-  background-color: #e6e6e6;
-  padding: 10px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  border-radius: 20px;
-  width: 300px;
-  text-align: center;
-}
+.column-container .column { width: 25%; margin: 30px; background-color: #e6e6e6; padding: 10px; border-radius: 20px; width: 300px; text-align: center; }
 
-.column-container .column-title {
-  font-family: "Gaegu", cursive;
-  font-size: 30px;
-}
+.column-container .column-title { font-family: "Gaegu", cursive; font-size: 30px; }
 
-.card {
-  padding: 10px;
-  background-color: #cccccc;
-  border: 2px solid #000;
-  text-align: center;
-  margin-right: 40px;
-  margin-bottom: 5%;
-}
+.card { padding: 10px; background-color: #cccccc; border: 2px solid #000; text-align: center; margin-right: 40px; margin-bottom: 5%; }
 
-.card .card-description {
-  color: #333;
-  font-family: "Gaegu", cursive;
-  font-size: 20px;
-}
+.card .card-description { color: #333; font-family: "Gaegu", cursive; font-size: 20px; }
 
-.btn-delete {
-  background-color: #ffb3b3;
-  border: 1px solid #333;
-}
+.btn-delete { background-color: #ffb3b3; border: 1px solid #333; }
 
-.btn-delete:hover {
-  background-color: #ff0000;
-  border: 1px solid #333;
-  transition: 0.4s;
-  color: #fff;
-}
+.btn-delete:hover { background-color: #ff0000; border: 1px solid #333; transition: 0.4s; color: #fff; }
 
-.add-card {
-  margin-left: 10px;
-  background-color: #bae1ff;
-  border: 1px solid #333;
-}
+.add-card { margin-left: 10px; background-color: #bae1ff; border: 1px solid #333; }
 
-.add-card:hover {
-  background-color: #75D6FF;
-  border: 1px solid #333;
-  transition: 0.4s;
-  color: #fff;
-}
+.add-card:hover { background-color: #75D6FF; border: 1px solid #333; transition: 0.4s; color: #fff; }
 
-@media (max-width: 767px) {
-  .board__header {
-    color: #fff;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
+@media (max-width: 767px) { .board__header { color: #fff; } }
