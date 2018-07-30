@@ -16,7 +16,7 @@ document.querySelector('#board .create-column').addEventListener('click', functi
     body: data,
   }).then(function (resp) {
     var column = new Column(resp.id, name);
-    board.createColumn(column);
+    board.addColumn(column);
   });
 });
 
